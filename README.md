@@ -43,7 +43,7 @@ StackOverflow tag is [cactoos](https://stackoverflow.com/questions/tagged/cactoo
 These are the [support principles](https://ashtonhogan.com/why-are-you-afraid-of-free-support.html) behind Tacinga.
 
 **License.**
-These are the [license principles](https://ashtonhogan.com/commercial-licenses-make-you-a-bad-person.html) behind Tacinga.
+These are the [license principles](https://ashtonhogan.com/commercial-licenses-do-not-make-you-a-bad-person.html) behind Tacinga.
 
 * The [MIT license](https://raw.githubusercontent.com/ashtonhogan/cactoos-webserver/master/README.md) applies while you're not using the software for any commercial activity
 * Our [commercial license](http://www.binpress.com/license/view/l/36fb5928c44bd99f25d6da3c115a4fe3) applies when you use the software for any commercial activity
@@ -52,7 +52,7 @@ These are the [license principles](https://ashtonhogan.com/commercial-licenses-m
 It is really easy to buy a commercial license:
 
 * All licenses types include all future 0.x.x versions
-* If you have a small or medium size business with 1-49 people then [buy](https://www.coinpayments.net/index.php?cmd=_pay&reset=1&merchant=91248a0993242d7bb62ccec107a3e610&currency=USD&amountf=59&item_name=Payment%20for%20Tacinga%20Basic%20License) a basic license for $49
+* If you have a small or medium size business with 1-49 people then [buy](https://www.coinpayments.net/index.php?cmd=_pay&reset=1&merchant=91248a0993242d7bb62ccec107a3e610&currency=USD&amountf=49&item_name=Payment%20for%20Tacinga%20Basic%20License) a basic license for $49
 * If you have a large size business with 50 or more people then [buy](https://www.coinpayments.net/index.php?cmd=_pay&reset=1&merchant=91248a0993242d7bb62ccec107a3e610&currency=USD&amountf=1999&item_name=Payment%20for%20Tacinga%20Enterprise%20License) an enterprise license for $1999
 * Note: Please keep your purchase receipt as evidence of your payment in future
 * Note: Your license may be annulled if we cannot reach you using the contact details provided
