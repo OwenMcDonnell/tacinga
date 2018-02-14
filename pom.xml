@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.jcabi</groupId>
+        <artifactId>parent</artifactId>
+        <version>0.49.2</version>
+    </parent>
+    <groupId>com.ashtonhogan</groupId>
+    <artifactId>tacinga</artifactId>
+    <version>0.0.1</version>
+    <packaging>jar</packaging>
+    <name>tacinga</name>
+    <description>Object-Oriented Java Unit Testing Library</description>
+    <url>https://github.com/ashtonhogan/tacinga</url>
+    <inceptionYear>2018</inceptionYear>
+    <organization>
+        <name>Ashton Hogan Limited</name>
+        <url>https://github.com/ashtonhogan/tacinga</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://github.com/ashtonhogan/tacinga/blob/master/LICENSE.txt</url>
+            <distribution>site</distribution>
+        </license>
+        <license>
+            <name>Commercial</name>
+            <url>http://www.binpress.com/license/view/l/36fb5928c44bd99f25d6da3c115a4fe3</url>
+            <distribution>site</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>1</id>
+            <name>Ashton Hogan</name>
+            <email>info@ashtonhogan.com</email>
+            <organization>ashtonhogan.com</organization>
+            <organizationUrl>https://ashtonhogan.com</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>+0</timezone>
+        </developer>
+    </developers>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/ashtonhogan/tacinga/issues</url>
+    </issueManagement>
+    <scm>
+        <connection>scm:git:git@github.com:ashtonhogan/tacinga.git</connection>
+        <developerConnection>scm:git:git@github.com:ashtonhogan/tacinga.git</developerConnection>
+        <url>https://github.com/ashtonhogan/tacinga</url>
+    </scm>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>9</maven.compiler.source>
+        <maven.compiler.target>9</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.cactoos</groupId>
+            <artifactId>cactoos</artifactId>
+            <version>0.29</version>
+        </dependency>
+    </dependencies>
+</project>
