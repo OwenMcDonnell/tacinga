@@ -1,13 +1,10 @@
 package com.ashtonhogan.tacinga;
 
-import com.ashtonhogan.tacinga.text.ActualText;
-import com.ashtonhogan.tacinga.text.ExpectedText;
+import com.ashtonhogan.tacinga.text.FailureText;
 
 public interface Condition {
 
-    public ExpectedText expected() throws Exception;
-
-    public ActualText actual() throws Exception;
+    public FailureText failureText() throws Exception;
 
     public Boolean conforms() throws Exception;
 }

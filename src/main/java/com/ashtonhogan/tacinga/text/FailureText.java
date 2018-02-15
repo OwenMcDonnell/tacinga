@@ -1,11 +1,13 @@
 package com.ashtonhogan.tacinga.text;
 
+import com.ashtonhogan.tacinga.Condition;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import org.cactoos.Scalar;
 import org.cactoos.Text;
+import org.cactoos.collection.Mapped;
 import org.cactoos.scalar.IoCheckedScalar;
+import org.cactoos.text.JoinedText;
+import org.cactoos.text.TextOf;
 import org.cactoos.text.UncheckedText;
 
 @SuppressWarnings({"FinalClass", "ClassWithoutLogger"})
@@ -13,12 +15,21 @@ public class FailureText implements Text {
 
     private final Scalar<String> origin;
 
-    public FailureText(final String input) {
-        this(input, StandardCharsets.UTF_8);
+    public FailureText(final CauseText causeText, final ExpectedText expectedText, final ActualText actualText) {
+        this(
+                () -> new JoinedText(
+                        new TextOf(" "),
+                        causeText,
+                        expectedText,
+                        actualText
+                ).asString()
+        );
     }
 
-    public FailureText(final String input, final Charset cset) {
-        this(() -> new String(input.getBytes(cset), cset));
+    public FailureText(final Mapped<Condition, FailureText> mapped) {
+        this(
+                () -> new TextOf(mapped).asString()
+        );
     }
 
     private FailureText(final Scalar<String> scalar) {

@@ -2,5 +2,7 @@ package com.ashtonhogan.tacinga.unit;
 
 public interface StringUnit extends Unit {
 
-    public String asValue() throws Exception;
+    public String expected() throws Exception;
+
+    public String actual() throws Exception;
 }

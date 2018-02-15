@@ -65,10 +65,14 @@ Test for `null`:
 
 ```java
 new ThatAssert(
-        new ObjectiveText("Return a null value"),
-        new FailureText("Value was not null"),
+        new ObjectiveText("Convert to null"),
         new NullCondition(
-                null
+                new TextHasNull(
+                        new CauseText("Text did not return null"),
+                        new PrefixText("Text with"),
+                        new NullText(new TextOf("HelLo!")),
+                        null
+                )
         )
 ).evaluate();
 ```
@@ -77,12 +81,14 @@ Test object equality:
 
 ```java
 new ThatAssert(
-        new ObjectiveText("Convert to lower case"),
-        new FailureText("Can't lower case a text"),
+        new ObjectiveText("Convert to lower case test"),
         new EqualCondition(
-                new PrefixText("Text with"),
-                new TextHasString("hello!"),
-                new LowerText(new TextOf("HelLo!"))
+                new TextHasString(
+                        new CauseText("Can't lower case a text"),
+                        new PrefixText("Text with"),
+                        new LowerText(new TextOf("HelLo!")),
+                        "hello!"
+                )
         )
 ).evaluate();
 ```

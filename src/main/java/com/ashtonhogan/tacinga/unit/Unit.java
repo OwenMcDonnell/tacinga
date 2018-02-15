@@ -1,9 +1,9 @@
 package com.ashtonhogan.tacinga.unit;
 
-import org.cactoos.Text;
+import com.ashtonhogan.tacinga.text.FailureText;
 
 interface Unit {
 
-    public Text asText() throws Exception;
+    public FailureText failureText() throws Exception;
 
 }
