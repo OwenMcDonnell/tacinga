@@ -59,13 +59,48 @@ It is really easy to buy a commercial license:
 
 ## Usage
 
-First implement one of `StringUnit`, `ObjectUnit` or `ArrayUnit` interfaces in the class being tested
+First implement one of `StringUnit`, `ObjectUnit` or `ArrayUnit` interfaces in your matcher class.
+Let's say you implement `ObjectUnit` - you will then need to define a few methods as demonstrated here:
+
+```
+@Override
+public FailureText failureText() throws Exception {
+    return new FailureText(
+        new CauseText("Can't lower case a text"),
+            new ExpectedText(
+                new PrefixText(PREFIX),
+                new TextOf(this.string)
+            ),
+            new ActualText(
+                new PrefixText(PREFIX),
+                this.text
+            )
+    );
+}
+```
+
+```
+@Override
+public Object expected() throws Exception {
+    return this.string;
+}
+```
+
+```
+@Override
+public Object actual() throws Exception {
+    return this.text.asString();
+}
+```
+
+There are a number of testing conditions available.
+Below are some demonstrations on how to use them.
 
 Test for `null`:
 
 ```java
 new ThatAssert(
-        new ObjectiveText("Convert to null"),
+        new ObjectiveText("Convert to null test"),
         new NullCondition(
                 new TextHasNull(
                         new CauseText("Text did not return null"),
