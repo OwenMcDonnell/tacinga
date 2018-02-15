@@ -66,7 +66,7 @@ Let's say you implement `ObjectUnit` - you will then need to define a few method
 @Override
 public FailureText failureText() throws Exception {
     return new FailureText(
-        new CauseText("Can't lower case a text"),
+            this.causeText,
             new ExpectedText(
                 new PrefixText(PREFIX),
                 new TextOf(this.string)
