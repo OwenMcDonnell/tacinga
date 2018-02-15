@@ -2,6 +2,7 @@
 
 [![DevOps By Rultor.com](http://www.rultor.com/b/ashtonhogan/tacinga)](http://www.rultor.com/p/ashtonhogan/tacinga)
 
+[![Build status](https://ci.appveyor.com/api/projects/status/github/ashtonhogan/tacinga?branch=master&svg=true)](https://ci.appveyor.com/project/ashtonhogan/tacinga)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.ashtonhogan/tacinga/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.ashtonhogan/tacinga)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/ashtonhogan/tacinga/blob/master/LICENSE.txt)
 [![License](https://img.shields.io/badge/license-commercial-brightgreen.svg)](http://www.binpress.com/license/view/l/36fb5928c44bd99f25d6da3c115a4fe3)
