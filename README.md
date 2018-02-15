@@ -59,7 +59,7 @@ It is really easy to buy a commercial license:
 
 ## Usage
 
-First implement one of `StringUnit`, `ObjectUnit` or `ArrayUnit` interfaces in your matcher class.
+First create a new class and implement one of `StringUnit`, `ObjectUnit` or `ArrayUnit` interfaces in it.
 Let's say you implement `ObjectUnit` - you will then need to define a few methods as demonstrated here:
 
 ```
@@ -93,6 +93,7 @@ public Object actual() throws Exception {
 }
 ```
 
+Next, you create a test class.
 There are a number of testing conditions available.
 Below are some demonstrations on how to use them.
 
