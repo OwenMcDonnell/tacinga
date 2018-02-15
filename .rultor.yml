@@ -1,7 +1,11 @@
 assets:
-  settings.xml: zerocracy/home#assets/cactoos/settings.xml
-  pubring.gpg: zerocracy/home#assets/pubring.gpg
-  secring.gpg: zerocracy/home#assets/secring.gpg
+  settings.xml: ashtonhogan/tacinga#settings.xml.asc
+  pubring.gpg: ashtonhogan/tacinga#pubring.gpg.asc
+  secring.gpg: ashtonhogan/tacinga#secring.gpg.asc
+friends:
+  - ashtonhogan/tacinga
+  - yegor256/rultor
+  - jcabi/*
 env:
   MAVEN_OPTS: -XX:MaxPermSize=256m -Xmx1g
   JAVA_OPTS: -XX:MaxPermSize=256m -Xmx1g
@@ -15,7 +19,6 @@ merge:
     mvn clean install -Pqulice --errors --settings ../settings.xml
     mvn clean site -Psite --errors --settings ../settings.xml
     mvn clean
-    pdd --source=$(pwd) --verbose --file=/dev/null
 deploy:
   script: |
     mvn clean deploy -Pqulice --errors --settings ../settings.xml
@@ -24,4 +27,4 @@ release:
     [[ "${tag}" =~ ^[0-9]+(\.[0-9]+)*$ ]] || exit -1
     mvn versions:set "-DnewVersion=${tag}"
     git commit -am "${tag}"
-    mvn clean deploy -Pcactoos -Psonar -Pqulice -Psonatype --errors --settings ../settings.xml
+    mvn clean deploy -Ptacinga -Psonar -Pqulice -Psonatype --errors --settings ../settings.xml
