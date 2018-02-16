@@ -5,7 +5,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/github/ashtonhogan/tacinga?branch=master&svg=true)](https://ci.appveyor.com/project/ashtonhogan/tacinga)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.ashtonhogan/tacinga/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.ashtonhogan/tacinga)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/ashtonhogan/tacinga/blob/master/LICENSE.txt)
-[![License](https://img.shields.io/badge/license-commercial-brightgreen.svg)](https://raw.githubusercontent.com/ashtonhogan/cactoos-webserver/master/COMMERCIAL.txt)
+[![License](https://img.shields.io/badge/license-commercial-brightgreen.svg)](https://raw.githubusercontent.com/ashtonhogan/tacinga/master/COMMERCIAL.txt)
 
 **ATTENTION**: We're still in a very early alpha version, the API
 may and _will_ change frequently. Please, use it at your own risk.
@@ -49,8 +49,8 @@ These are the [contribution principles](https://ashtonhogan.com/why-you-should-n
 **License.**
 These are the [license principles](https://ashtonhogan.com/commercial-licenses-do-not-make-you-a-bad-person.html) behind Tacinga.
 
-* The [MIT license](https://raw.githubusercontent.com/ashtonhogan/cactoos-webserver/master/README.md) applies while you're not using the software for any commercial activity
-* Our [commercial license](https://raw.githubusercontent.com/ashtonhogan/cactoos-webserver/master/COMMERCIAL.txt) applies when you use the software for any commercial activity
+* The [MIT license](https://raw.githubusercontent.com/ashtonhogan/tacinga/master/README.md) applies while you're not using the software for any commercial activity
+* Our [commercial license](https://raw.githubusercontent.com/ashtonhogan/tacinga/master/COMMERCIAL.txt) applies when you use the software for any commercial activity
 
 **How to buy a commercial license.**
 It is really easy to buy a commercial license:
