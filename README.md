@@ -43,11 +43,14 @@ StackOverflow tag is [cactoos](https://stackoverflow.com/questions/tagged/cactoo
 **Support.**
 These are the [support principles](https://ashtonhogan.com/why-are-you-afraid-of-free-support.html) behind Tacinga.
 
+**Contributions.**
+These are the [contribution principles](https://ashtonhogan.com/why-you-should-not-contribute-to-open-source.html) behind Tacinga.
+
 **License.**
 These are the [license principles](https://ashtonhogan.com/commercial-licenses-do-not-make-you-a-bad-person.html) behind Tacinga.
 
 * The [MIT license](https://raw.githubusercontent.com/ashtonhogan/cactoos-webserver/master/README.md) applies while you're not using the software for any commercial activity
-* Our [commercial license](http://www.binpress.com/license/view/l/36fb5928c44bd99f25d6da3c115a4fe3) applies when you use the software for any commercial activity
+* Our [commercial license](https://raw.githubusercontent.com/ashtonhogan/cactoos-webserver/master/COMMERCIAL.txt) applies when you use the software for any commercial activity
 
 **How to buy a commercial license.**
 It is really easy to buy a commercial license:
@@ -60,8 +63,8 @@ It is really easy to buy a commercial license:
 
 ## Usage
 
-First create a new class and implement one of `StringUnit`, `ObjectUnit` or `ArrayUnit` interfaces in it.
-Let's say you implement `ObjectUnit` - you will then need to define a few methods as demonstrated here:
+First create a new class and implement one of the `Unit` [interfaces](https://github.com/ashtonhogan/tacinga/tree/master/src/main/java/com/ashtonhogan/tacinga/unit).
+Let's say you implement `ObjectUnit` - you will then need to implement a few methods as demonstrated here:
 
 ```
 @Override
