@@ -20,7 +20,7 @@ public final class NotExistingFileCondition implements Condition {
 
     @Override
     public Boolean conforms() throws Exception {
-        return (!this.fileUnit.file().exists());
+        return (!this.fileUnit.actual().exists());
     }
 
 }
