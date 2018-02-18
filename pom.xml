@@ -85,7 +85,7 @@
                     <groupId>com.sun</groupId>
                     <artifactId>tools</artifactId>
                     <scope>system</scope>
-                    <version>1.6</version>
+                    <version>1.7</version>
                     <systemPath>${java.home}/../lib/tools.jar</systemPath>
                 </dependency>
             </dependencies>
@@ -102,7 +102,7 @@
                     <groupId>com.sun</groupId>
                     <artifactId>tools</artifactId>
                     <scope>system</scope>
-                    <version>1.6</version>
+                    <version>1.7</version>
                     <systemPath>${java.home}/../Classes/classes.jar</systemPath>
                 </dependency>
             </dependencies>
