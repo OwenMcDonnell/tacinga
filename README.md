@@ -7,6 +7,9 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/ashtonhogan/tacinga/blob/master/LICENSE.txt)
 [![License](https://img.shields.io/badge/license-commercial-brightgreen.svg)](https://raw.githubusercontent.com/ashtonhogan/tacinga/master/COMMERCIAL.txt)
 
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/ashtonhogan/tacinga.svg)](http://isitmaintained.com/project/ashtonhogan/tacinga "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/ashtonhogan/tacinga.svg)](http://isitmaintained.com/project/ashtonhogan/tacinga "Percentage of issues still open")
+
 **ATTENTION**: We're still in a very early alpha version, the API
 may and _will_ change frequently. Please, use it at your own risk.
 
