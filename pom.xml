@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
+<!--    <parent> This is causing the build to fail
         <groupId>com.jcabi</groupId>
         <artifactId>parent</artifactId>
         <version>0.49.2</version>
-    </parent>
+    </parent>-->
     <groupId>com.ashtonhogan</groupId>
     <artifactId>tacinga</artifactId>
     <version>0.0.1</version>
@@ -64,28 +64,4 @@
             <version>0.29</version>
         </dependency>
     </dependencies>
-    <profiles>
-        <profile>
-            <activation>
-                <jdk>(,1.9)</jdk>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-antrun-plugin</artifactId>
-                        <dependencies>
-                            <dependency>
-                                <groupId>com.sun</groupId>
-                                <artifactId>tools-jar</artifactId>
-                                <version>1</version>
-                                <scope>system</scope>
-                                <systemPath>${java.home}/../lib/tools.jar</systemPath>
-                            </dependency>
-                        </dependencies>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>
