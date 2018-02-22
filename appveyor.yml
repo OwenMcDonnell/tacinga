@@ -3,7 +3,7 @@ skip_tags: true
 clone_depth: 10
 environment:
   matrix:
-    - JAVA_HOME: C:\Program Files\Java\
+    - JAVA_HOME: C:\Program Files\Java\lib
 branches:
   only:
     - master
